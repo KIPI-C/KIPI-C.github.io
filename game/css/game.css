@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+}
+#game{
+    border: 1px black solid;
+}
+.btn{
+    opacity: .5;
+    position: fixed;
+    fill: #ddd;
+}
+.btn:hover{
+    opacity: .7;
+    fill:#bbb;
+}
