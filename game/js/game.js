@@ -93,7 +93,7 @@
     function draw() {
         if (kstate == "load") {
             loadcache += 1;
-            if(loadcache<10){ctx.drawImage(kpcimg, cwid/45, cwid*.1, cwid*.32, cwid*.32);}
+            if(loadcache<10){ctx.drawImage(kpcimg, cwid/45, chei*.35, cwid*.32, cwid*.32);}
             if (!kpcimgdraw) {
                 console.log("drawing logo")
                 ctx.fillStyle = "#002"
