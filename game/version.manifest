@@ -1,11 +1,9 @@
 CACHE MANIFEST
-#V0.1.99999999999999999999999999999999999999999999999999999999999999999999999
-#快点更新啊！！！！！
+#V1.2.3
 #game
+
 CACHE:
 js/game.js
-js/jquery.min.js
-js/tween.js
 index.html
 favicon.ico
 css/game.css
@@ -14,3 +12,4 @@ img/up.svg
 img/left.svg
 img/right.svg
 img/gun.svg
+img/KIPI-C.svg
