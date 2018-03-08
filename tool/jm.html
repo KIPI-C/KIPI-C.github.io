@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KIPI-C - 在线加密</title>
+</head>
+<body>
+
+	<p ><span id="demo" >加密结果：</span></p>
+	<h1>在线加密</h1>
+	<label for="t">需要加密的字符：</label>
+	<input type="text" id="t" name="t" oninput="my()">
+	<label for="bb">后移：</label>
+	<input type="number" id="bb" name="bb" oninput="my()">
+<script>
+function my(){
+	document.getElementById("demo").innerHTML=null
+	var str=document.getElementById("t").value
+	var i=0;
+	while(i<str.length){
+		var n=str.charCodeAt(i);
+		var c=document.getElementById("bb").value;
+		if(!c){c=0}
+		n=parseInt(c)+parseInt(n);
+		document.getElementById("demo").innerHTML+=n+",";
+		i++;
+	}
+	document.getElementById("demo").innerHTML=document.getElementById("demo").innerHTML.slice(0,document.getElementById("demo").innerHTML.length-1)
+}
+</script>
+
+</body>
