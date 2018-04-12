@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KIPI-C - 随机数</title>
+</head>
+<body>
+    <h1>KIPI-C - 随机数</h1>
+    <button onclick="my()">换一个</button>
+    <label for="inp">随机数表数量</label><input type="number" id="inp" name="inp">
+    <p id="output"></p>
+<script>
+document.getElementById("inp").value=102
+function my(){
+    document.getElementById("output").innerHTML=""
+    for(var j=1;j<parseInt(inp.value)-1;j++){
+        var i=parseInt(Math.random()*10)
+        document.getElementById("output").innerHTML+=i
+        if(j%4==0)document.getElementById("output").innerHTML+=" "
+        if(j%20==0)document.getElementById("output").innerHTML+="<br>"
+    }
+}
+</script>
+
+</body>
