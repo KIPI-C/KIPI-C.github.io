@@ -1,0 +1,140 @@
+*{
+    transition: .3s color ease,transform .3s ease-out,background-color .3s ease;
+    box-sizing: border-box;
+    color: #fff
+}
+::selection{
+    background-color: rgba(26, 97, 189, 0.8)
+}
+.icon{
+    width: 40px;height: 40px;
+    margin: 0;
+}
+/*element*/
+body{
+    background: #000;
+}
+header{
+    position: fixed;top: 0;left: 0;
+    width: 100%;height: 60px;min-width: 280px;
+}
+a{
+    color: #fff
+}
+a:hover{
+    color: #fff;
+}
+
+/*navbar*/
+.knavbar{
+    background-color: rgba(58, 58, 58, 0.7);
+    width: 100%;height: 56px;
+    box-shadow: 0 2px 10px rgba(66, 66, 66,0.6)
+}
+.knavbar-title{
+    width: 220px;height: 56px;display: inline-block;
+}
+.knavbar-title img{
+    height: 40px;
+    position: relative;top:8px;left:30px
+}
+.knavbar-right{
+    display: inline-block;
+    position: absolute;right: 8px;
+    width: 70%;
+}
+.knavbar nav{
+    display: inline-block;
+    width: calc(100% - 56px *2);
+}
+.knavbar ul{
+    width: 100%;
+    padding: 0;margin: 0;
+    list-style-type: none;
+    font-size: 0;
+}
+.knavbar ul :nth-child(1){border-bottom-color: rgb(251,158,46)}
+.knavbar ul :nth-child(2){border-bottom-color: rgb(226, 193, 28)}
+.knavbar ul :nth-child(3){border-bottom-color: rgb(154, 219, 22)}
+.knavbar ul :nth-child(4){border-bottom-color: rgb(59, 224, 144)}
+.knavbar ul :nth-child(5){border-bottom-color: rgb(35, 224, 221)}
+.knavbar ul :nth-child(6){border-bottom-color: rgb(58, 151, 250)}
+.knavbar ul :nth-child(7){border-bottom-color: rgb(132, 26, 218)}
+.knavbar ul :nth-child(8){border-bottom-color: rgb(213, 68, 246)}
+.knavbar ul :nth-child(9){border-bottom-color: rgb(246, 80, 171)}
+.knavbar nav a{
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    width: calc(100% /9);height: 56px;border-bottom: 4px solid;
+    overflow: hidden;
+}
+.knavbar a:hover{
+    text-decoration: none;
+}
+.knavbar ul>:nth-child(1):hover,.knavbar ul>:nth-child(1):focus{background-color: rgba(251, 159, 46,0.6)}
+.knavbar ul>:nth-child(2):hover,.knavbar ul>:nth-child(2):focus{background-color: rgba(226, 193, 28,0.6)}
+.knavbar ul>:nth-child(3):hover,.knavbar ul>:nth-child(3):focus{background-color: rgba(154, 219, 22,0.6)}
+.knavbar ul>:nth-child(4):hover,.knavbar ul>:nth-child(4):focus{background-color: rgba(59, 224, 144,0.6)}
+.knavbar ul>:nth-child(5):hover,.knavbar ul>:nth-child(5):focus{background-color: rgba(35, 224, 221,0.6)}
+.knavbar ul>:nth-child(6):hover,.knavbar ul>:nth-child(6):focus{background-color: rgba(58, 151, 250,0.6)}
+.knavbar ul>:nth-child(7):hover,.knavbar ul>:nth-child(7):focus{background-color: rgba(132, 26, 218,0.6)}
+.knavbar ul>:nth-child(8):hover,.knavbar ul>:nth-child(8):focus{background-color: rgba(213, 68, 246,0.6)}
+.knavbar ul>:nth-child(9):hover,.knavbar ul>:nth-child(9):focus{background-color: rgba(246, 80, 171,0.6)}
+.knavbar li{
+    font-size: 16px;text-align: center;
+    width: 100%;
+    position: relative;top: 14px;
+}
+.knavbar .htool-btn{
+    display: none
+}
+.knavbar-btn{
+    width: 56px;height: 56px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer
+}
+.knavbar-btn:hover{
+    background-color: rgba(255, 255, 255, 0.2)
+}
+.knavbar-btn i{
+    position: relative;top: 18px;
+    font-size: 16px
+}
+.navbar-fill{
+    height:56px;
+    display: none
+}
+
+/*main*/
+main{
+    width: 100%
+}
+.main-block{
+    width:100%;
+    min-height: 600px;
+    margin: 0 auto;
+    background-color: #555
+}
+/*introduce*/
+.sec-introduce{
+    width:100%;height:700px;
+    background-image: url("../img/background-carton.jpg");
+    background-size: cover;
+    background-position: center
+}
+
+
+/*footer*/
+footer{
+    width: 100%;min-height: 20px;
+}
+.copyright{
+    text-align: center;
+}
+.copyright small{
+    color: #888;
+}
+.copyright small:hover{
+    color: rgb(24, 155, 216)
+}
