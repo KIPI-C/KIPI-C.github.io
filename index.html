@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/universal.css">
         <script src="js/jq.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/k-ripple.js"></script>
         <script src="js/universal.js"></script>
     </head>
 
@@ -20,7 +21,7 @@
             </div>
             <div class="knavbar-right">
                 <nav><ul>
-                        <a href="#"><li>首页</li></a>
+                        <a href="#" class="selected"><li>首页</li></a>
                         <a href="#"><li>博客</li></a>
                         <a href="#"><li>音乐</li></a>
                         <a href="#"><li>程序</li></a>
@@ -40,8 +41,11 @@
 
         <main>
             <div class="main-block">
-                <section class="sec-introduce"></section>
-                <section></section>
+                <section class="sec-cover">
+                   <div id="cover-title"><h1>欢迎来到KIPI-C的小站</h1>
+                    <button class="k-ripple" k-ripple="initialRadius:0,color:#3dc,speed:1,acceleration:1">联系KIPI-C</button>
+                    <button class="k-ripple">了解更多</button></div>
+                </section>
                 <section></section>
             </div>
         </main>
