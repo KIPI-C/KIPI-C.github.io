@@ -17,12 +17,19 @@ body{
 header{
     position: fixed;top: 0;left: 0;
     width: 100%;height: 60px;min-width: 280px;
+    z-index: 999999999;
 }
 a{
     color: #fff
 }
 a:hover{
     color: #fff;
+}
+button{
+    background-color: #555;
+    border: none;outline: none;
+    padding: 5px 10px;
+    margin: 4px 4px
 }
 
 /*navbar*/
@@ -68,7 +75,8 @@ a:hover{
     width: calc(100% /9);height: 56px;border-bottom: 4px solid;
     overflow: hidden;
 }
-.knavbar a:hover{
+.knavbar a:hover
+,.knavbar a:focus{
     text-decoration: none;
 }
 .knavbar ul>:nth-child(1):hover,.knavbar ul>:nth-child(1):focus{background-color: rgba(251, 159, 46,0.6)}
@@ -83,16 +91,20 @@ a:hover{
 .knavbar li{
     font-size: 16px;text-align: center;
     width: 100%;
-    position: relative;top: 14px;
+    position: relative;top: 15px;
+}
+.knavbar .selected{
+    background-color: rgba(255, 255, 255, 0.1)
 }
 .knavbar .htool-btn{
     display: none
 }
 .knavbar-btn{
+    position: absolute;right: 0;
     width: 56px;height: 56px;
     text-align: center;
     display: inline-block;
-    cursor: pointer
+    cursor: pointer;
 }
 .knavbar-btn:hover{
     background-color: rgba(255, 255, 255, 0.2)
@@ -114,26 +126,45 @@ main{
     width:100%;
     min-height: 600px;
     margin: 0 auto;
-    background-color: #555
+    background-color: #222
 }
-/*introduce*/
-.sec-introduce{
+/*cover*/
+.sec-cover{
     width:100%;height:700px;
     background-image: url("../img/background-carton.jpg");
     background-size: cover;
     background-position: center
 }
+#cover-title{
+    display: none;width: 80%;
+    text-align: center;
+    position: absolute;top: 300px;left:10%;
+}
+#cover-title h1{
+    font-size: 48px;
+}
+#cover-title button{
+    width: 140px;height: 50px;
+    font-size: 17px;
+    box-shadow: 0 2px 10px #222 
+}
+#cover-title button:focus{
+    box-shadow: 0 2px 6px #222
+}
 
 
 /*footer*/
 footer{
-    width: 100%;min-height: 20px;
+    width: 100%;min-height: 40px;
+    position: relative;
 }
 .copyright{
     text-align: center;
+    width: 100%;
+    position: absolute;bottom: 0;
 }
 .copyright small{
-    color: #888;
+    color: #aaa;
 }
 .copyright small:hover{
     color: rgb(24, 155, 216)
