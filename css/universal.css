@@ -3,7 +3,7 @@
     box-sizing: border-box;
     color: #fff
 }
-::selection{
+::selection{ 
     background-color: rgba(26, 97, 189, 0.8)
 }
 .icon{
