@@ -3,7 +3,7 @@
     box-sizing: border-box;
     color: #fff
 }
-::selection{ 
+::selection{
     background-color: rgba(26, 97, 189, 0.8)
 }
 .icon{
@@ -122,6 +122,11 @@ button{
 main{
     width: 100%
 }
+.fill-background{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1)
+}
 .main-block{
     width:100%;
     min-height: 600px;
@@ -131,7 +136,7 @@ main{
 /*cover*/
 .sec-cover{
     width:100%;height:700px;
-    background-image: url("../img/background-carton.jpg");
+    background: url("../img/background-carton.jpg");
     background-size: cover;
     background-position: center
 }
@@ -146,8 +151,8 @@ main{
 #cover-title button{
     width: 140px;height: 50px;
     font-size: 17px;
-    background-color:#3AC;
-    box-shadow: 0 2px 10px #222;
+    background-color: rgb(24, 115, 201);
+    box-shadow: 0 2px 10px #222 
 }
 #cover-title button:focus{
     box-shadow: 0 2px 6px #222
