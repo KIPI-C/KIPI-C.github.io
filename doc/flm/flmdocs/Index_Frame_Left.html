@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FL Studio Mobile Manual</title>
+<link rel="stylesheet" type="text/css" href="html/flstudio.css">
+<link rel="stylesheet" type="text/css" href="resources/sw.css" />
+<link rel="stylesheet" type="text/css" href="resources/flhelp.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="EZGenerator 4.3.16.7 (intern-imageline2009[1])">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=900, maximum-scale=1.0" />
+<meta name="last-modified" content="di, 07 03 2017 10:26:20GMT">
+<link href="resources/favicon.ico" type="image/x-icon" rel="shortcut icon">
+<link href="resources/favicon.png" type="image/png" rel="icon">
+<script src="jquery.min.js"></script>
+<script type="text/javascript" src="resources/jquery_utils.js"></script>
+<script src="resources/api.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      if (typeof mmenu_animation === "function") {
+        $("#mmenu").mmenu_animation({});
+      }
+    });
+    $(document).ready(function(){
+      var resp_menu= $("#mmenu").clone().prop('id', 'resp_menu');
+      var overlay = $('<div class="resp_overlay" style="display:none"></div>');
+      resp_menu.insertAfter($("#mmenu"));
+      $("body").prepend(overlay);
+      $(".resp_menu_icon").on('click', function(){
+        if(!resp_menu.is(':visible')){
+          resp_menu.show().animate({'opacity':'1'}, 'fast');
+         $("#inner_container, #wrap, #mid_inner").animate({'left':'-70%'}, 'slow');
+          overlay.show();
+          $("#search_forum_container, .navbar").animate({'left':'-74%'}, 'slow');
+
+          resp_menu.animate({'left':'30%'}, 'slow');
+        }else{
+         $("#inner_container, #wrap, #mid_inner, #_forum_container, .navbar").animate({'left':'0'}, 'slow');
+          resp_menu.animate({'left':'100%'}, 'slow');
+          overlay.hide();
+
+          resp_menu.animate({'opacity':'0'}, 100).hide(100);
+        }
+      });
+      $("#resp_menu .ddr").on('click', function(e){
+        e.preventDefault();
+        var sub_menu = $(this).next('ul');
+        if(!sub_menu.length){
+          return;
+        } 
+        if(!sub_menu.is(':visible')){
+          sub_menu.show(200).animate({'left':'0'}, 'slow');
+          $(this).addClass('opened');
+        }else{
+          sub_menu.animate({'left':'-100%'}, 'slow').hide(200);
+          $(this).removeClass('opened');
+        }
+      });
+      var responsive_off = false;
+      $(window).on('resize',function(){
+        var is_reps = $(".resp_menu_icon").is(':visible');
+        if(!is_reps && !responsive_off){
+          $("#search_forum_container, #mid_inner, .navbar, #inner_container, #wrap").css('left','0');
+          resp_menu.css('left','100%').hide();
+          overlay.hide();
+          responsive_off = true;
+        }
+        else if(is_reps)
+          responsive_off = false;
+      });
+      var currentYear = (new Date).getFullYear();
+      var legalYears = '1998-'+currentYear;
+      $('#years').text(legalYears);
+    });
+  </script>
+<base target="main">
+</head>
+<body id="frame_left">
+<div>
+<div class="profileWrap sw">
+<script>
+      $(document).ready(function(){
+        $(".search_inp").livesearch();
+      });
+    </script>
+<div id="wiz_area">
+<form method="POST" action="https://support.image-line.com/action/supportwizard/" class="search_page" id="search_form">
+<input type="hidden" name="filters[]" value="3" />
+<input type="hidden" name="platforms[]" value="2" />
+<input type="hidden" name="api" value="1" />
+<input type="text" name="q" placeholder="搜索" autocomplete="off" class="search_inp" value="">
+<div class="buttons">
+<input class="btn search_btn" type="submit" name="search" value="在image-line搜索" />
+<a target="_blank" class="btn ticket_btn" style="display:none" href="/ticketing/index.php?module=TicketPost" title="Submit a support request">Ticket</a>
+</div>
+<div id="live_results" style="display:block !important;"></div>
+</form>
+</div>
+</div>
+</div>
+<b id="subtitle">FL Studio Mobile 3</b>
+<ul>
+<li><a href="html/plugins/FL%20Studio%20Mobile.htm">FL Studio Mobile</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_FLStudioPlugin.htm">FL Studio Mobile插件</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_HomePanel.htm">Home Panel</a>
+<ul>
+<li><a href="html/plugins/FL%20Studio%20Mobile_HomePanel.htm#songs">Save Options</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_HomePanel.htm#settings">应用设置</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_HomePanel.htm#audio">音频设置</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_HomePanel.htm#shop">应用内部商店</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_HomePanel.htm#sharingdata">分享文件</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_HomePanel.htm#manageuserfiles">文件浏览器</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_HomePanel.htm#userdata">你的文件</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_WiFi.htm">Networking</a>
+</ul>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Playlist.htm">Playlist</a>
+<ul>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Playlist.htm#audiorecording">音频录制</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Editors.htm#automationclip">自动化控制</a>
+</ul>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Rack.htm">Rack</a>
+<br><br>
+<p>乐器
+<ul>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Editors.htm#stepsequencer">Drum Sampler</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Module_DirectWave.htm">DirectWave</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_iOS_InterApp.htm">IAA/Audiobus(iOS)</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Module_Minisynth.htm">MiniSynth</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Module_GMS.htm">GMS</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Module_SuperSaw.htm">SuperSaw</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Module_TransistorBass.htm">Transistor Bass</a>
+</ul>
+<br>
+<p>效果器
+<ul>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Module_Autoduck.htm">Autoduck</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Module_Chorus.htm">Chorus（和声）</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Module_Compressor.htm">Compressor</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Module_Distortion.htm">Distortion</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Module_ParametricEQ.htm">Equalizer (Para)</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Module_Filter.htm">Filter</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Module_Flanger.htm">Flanger</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Module_GraphicEQ.htm">Graphic EQ</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_iOS_InterApp.htm">IAA/Audiobus (iOS)</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Module_Leveller.htm">Leveller</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Module_Limiter.htm">Limiter（压限）</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Module_MultiFX.htm">Multi FX</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Module_Phaser.htm">Phaser</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Module_Reverb.htm">Reverb（混响）</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Module_Stereoizer.htm">Stereoizer</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Module_TapeDelay.htm">Tape Delay</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Module_TranceDelay.htm">Trance Delay</a>
+</ul>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Mixer.htm">混音台</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Editors.htm">编辑器</a>
+<ul>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Editors.htm#pianoroll">Piano roll</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Editors.htm#stepsequencer">Stepsequencer</a>
+ <li><a href="html/plugins/FL%20Studio%20Mobile_Editors.htm#automationclip">Automation Clips</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Editors.htm#audioclips">音频片段</a>
+</ul>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Controllers.htm">触摸控制器</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Controllers.htm#flm_externalcontrollers">MIDI控制</a>
+<li><a href="html/plugins/FL%20Studio%20Mobile_Upgrade.htm">FL Mobile 2 vs 3</a>
+<li><a href="https://support.image-line.com/redirect/flstudiomobile_videos" target="_blank">Video Tutorials</a>
+<li><a href="https://support.image-line.com/redirect/flmobile_forum" target="_blank">FL Studio Mobile User Forum</a>
+<li><a href="https://www.image-line.com/flstudiomobile/" target="_blank">FL Studio Mobile在线</a>
+</ul>
