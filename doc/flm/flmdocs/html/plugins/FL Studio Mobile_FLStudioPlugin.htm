@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>FL Studio Mobile的插件版 | 文档 - KIPI-C的小站</title>
+<OBJECT type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+</OBJECT>
+<link type="text/css" href="../flstudio.css" rel="stylesheet">
+<script>
+  document.addEventListener('DOMContentLoaded', function(event) {
+    var leftFrame = document.getElementById('leftFrame');
+    var rightCol = document.getElementById('rightcol'); 
+    if (window.self !== window.top || window.location.href.indexOf("FL.chm") !== -1) {
+      rightCol.removeAttribute('id');
+      leftFrame.setAttribute('style','display:none');
+    }
+    else if (window.location.href.indexOf("http") !== -1) {
+  	  leftFrame.setAttribute('src','../../Index_Frame_Left.html');
+    }     
+    else{
+  	  leftFrame.setAttribute('src','../../Index_Frame_Left.html');
+    }  	
+  } );
+</script>
+</head>
+<body>
+<table class="container">
+<tr>
+<td>
+<iframe src="" name="leftFrame" id="leftFrame" class="ifr_bh" scrolling="auto"></iframe>
+</td>
+<td id="rightcol">
+<p class="SubTopicOf">FL Studio Mobile</p>
+<h1>FL Studio Mobile的插件版</h1>
+<p><a id="sharingdata"></a>
+<p><b>FL Studio Mobile</b>被作为<a class="extLink" href="http://www.image-line.com/flstudio/" target="_blank"><b>FL Studio</b></a>的免费插件提供，因此您可以将您的音乐制作提升到一个新的水平。
+<p class="justImages">
+<img src="../img_plug/flmobile_flstudioplugin.png" width="700">
+<p><b>注：</b> 从FL Studio Mobile 3开始，您必须要在插件里中加载项目，它们不再与FL Studio直接兼容。
+<h3>FL Studio Mobile插件</h3>
+<p>怎么用FL Studio Mobile插件？
+<ol>
+<li><b><font color="red">注意：</font></b>
+    FL Studio Mobile<b>插件版</b>随<b>FL Studio 12.4</b>一起推出。由于插件经常更新，请及时下载最新版本的插件<a class="extLink" href="http://support.image-line.com/redirect/flmobile_flplugin" target="_blank">从Looptalk</a>。
+<li>将FL Studio Mobile的项目传给您的电脑。 请参阅本手册的<a target="_blank" href="FL%20Studio%20Mobile_HomePanel.htm#sharingdata">分享工程</a>部分。
+  <b>第一次</b>做这件事的时候, 请务必选择'<b>SEND ALL</b>' 选项。
+  这样子做也会把额外的采样和乐器也会传送到FL Studio插件上面。
+<p class="justImages">
+<li>打开FL Studio Mobile插件版，然后在FL Studio Mobile版中加载项目。
+<li>FL Studio Mobile插件版将会自动同步到FL Studio中的播放列表。速度也会遵循宿主的速度
+<li>添加至少与FLM工程一样长的空Patten并且在FL Studio按播放按钮。
+<li>从现在起，您可以添加其他插件编曲了，并且还可以使用FL Studio和FL Studio Mobile来做编曲的核心环境。
+<li>（可选）当然，您也可以把FL Studio Mobile的每个轨道<a href="FL%20Studio%20Mobile_Playlist.htm#channel_menu">保存为MIDI文件</a>或把整个工程<a href="FL%20Studio%20Mobile_HomePanel.htm#save">保存为MIDI文件</a>后用FL Studio加载这些MIDI文件.
+<li><a href="https://www.youtube.com/embed/5dYBwoQeFuk">去油管看教学视频（自备梯子）</a></li>
+</ol>
+<h4>使用的技巧</h4>
+<p>您可以将FL Studio Mobile插件的工程视为这个轨道的核心部分。
+  <a href="FL%20Studio%20Mobile_HomePanel.htm#sharingdata">分享</a> 。
+  FLM的工程可以在你的电脑和移动设备之间被添加和开发。
+  当FLM在FL Studio作为插件时，你可以使用音质更好的乐器和更专业的效果器，因为你有一个更强大的CPU。
+  这样子，您就可以制作更复杂的项目。
+  当把复杂的项目传回给移动设备时，你可以让轨道静音来控制CPU的使用率。
+<hr>
+</td></tr></table></body>
+</html>
