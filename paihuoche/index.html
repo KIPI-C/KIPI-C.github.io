@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>扑克排火车</title>
+    <style>
+        #player>div{
+            display: inline-block;
+            margin:0 20px
+        }
+    </style>
+</head>
+<body>
+    <button id="start">开始/重新开始</button> <button id="play">继续</button> <button id="pause">暂停</button> <button id="stop">停止</button>
+    <p><label for="delay">间隔：</label><input type="number" id="delay" value="200">ms <small>*设置时间间隔需要重新开始哦</small></p>
+    <section id="state">状态：</section>
+    <section>
+        <h2>桌子</h2>
+        <p id="table"></p>
+    </section>
+    <section id="player">
+
+    </section>
+    <button id="addAI">+ AI</button>
+    <script src="main.js"></script>
+</body>
+</html>
